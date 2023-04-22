@@ -183,7 +183,6 @@ public class Home extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         tbBill = new javax.swing.JTable();
         txtNameBill = new javax.swing.JTextField();
-        btnDeleteBill = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
         btnUpdateBill = new javax.swing.JButton();
         btnRefresh = new javax.swing.JButton();
@@ -618,18 +617,6 @@ public class Home extends javax.swing.JFrame {
 
         txtNameBill.setDisabledTextColor(new java.awt.Color(153, 153, 153));
 
-        btnDeleteBill.setBackground(new java.awt.Color(255, 51, 51));
-        btnDeleteBill.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnDeleteBill.setForeground(new java.awt.Color(255, 255, 255));
-        btnDeleteBill.setText("Delete");
-        btnDeleteBill.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDeleteBill.setPreferredSize(new java.awt.Dimension(76, 30));
-        btnDeleteBill.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnDeleteBillMousePressed(evt);
-            }
-        });
-
         jLabel16.setFont(new java.awt.Font("Calibri", 1, 15)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setText("Order Date");
@@ -672,29 +659,29 @@ public class Home extends javax.swing.JFrame {
                             .addGroup(tabSellingLayout.createSequentialGroup()
                                 .addGap(26, 26, 26)
                                 .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel11)
-                                    .addComponent(txtNameBill, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-                                    .addComponent(jLabel16)
-                                    .addComponent(orderDate))
-                                .addGap(34, 34, 34)
-                                .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel13)
-                                    .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel12)
-                                        .addComponent(txtPriceBill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(tabSellingLayout.createSequentialGroup()
-                                        .addComponent(sizeM)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(sizeL))))
-                            .addGroup(tabSellingLayout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btnUpdateBill, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnAddBill, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(69, 69, 69)
-                                .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnDeleteBill, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(btnAddBill, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnUpdateBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                                        .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(5, 5, 5))
+                                    .addGroup(tabSellingLayout.createSequentialGroup()
+                                        .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jLabel11)
+                                            .addComponent(txtNameBill, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
+                                            .addComponent(jLabel16)
+                                            .addComponent(orderDate))
+                                        .addGap(34, 34, 34)
+                                        .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel13)
+                                            .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jLabel12)
+                                                .addComponent(txtPriceBill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(tabSellingLayout.createSequentialGroup()
+                                                .addComponent(sizeM)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(sizeL)))))))
                         .addGap(13, 13, 13))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tabSellingLayout.createSequentialGroup()
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -734,21 +721,21 @@ public class Home extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(tabSellingLayout.createSequentialGroup()
-                                .addComponent(txtPriceBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(89, 89, 89)
                                 .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnAddBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnDeleteBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, Short.MAX_VALUE)
-                                .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnUpdateBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(tabSellingLayout.createSequentialGroup()
+                                        .addComponent(txtPriceBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(89, 89, 89)
+                                        .addComponent(btnAddBill, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(tabSellingLayout.createSequentialGroup()
+                                        .addGap(114, 114, 114)
+                                        .addGroup(tabSellingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btnUpdateBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(44, 44, 44))
-                            .addComponent(jScrollPane3)))))
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)))))
         );
 
         tabPanel.add(tabSelling, "selling");
@@ -888,19 +875,6 @@ public class Home extends javax.swing.JFrame {
         btnAddBill.setEnabled(false);
     }//GEN-LAST:event_tbBillMousePressed
 
-    private void btnDeleteBillMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteBillMousePressed
-        // TODO add your handling code here:
-        if (currentRowBill > -1) {
-            deleteBill();
-            fillToBill();
-            saveFile();
-            currentRowBill = -1;
-            btnAddBill.setEnabled(true);
-        } else {
-            JOptionPane.showMessageDialog(this, "Please select the row you want to delete!");
-        }
-    }//GEN-LAST:event_btnDeleteBillMousePressed
-
     private void cbItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbItemActionPerformed
         // TODO add your handling code here:
         String kw = cbItem.getSelectedItem().toString();
@@ -1016,16 +990,6 @@ public class Home extends javax.swing.JFrame {
             resetForm();
         }
     }
-
-    private void deleteBill() {
-        int result = JOptionPane.showConfirmDialog(this, "Do you want to delete this row?",
-                "Delete", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
-        if (result == JOptionPane.YES_OPTION) {
-            billList.remove(currentRowBill);
-            resetForm();
-        }
-    }
-
     private void fillToBill() {
         tbModelBill.setRowCount(0);
         for (Bill b : billList) {
@@ -1178,7 +1142,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnAddBill;
     private javax.swing.JButton btnDelete;
-    private javax.swing.JButton btnDeleteBill;
     private javax.swing.JButton btnRefresh;
     private javax.swing.JButton btnUpdate;
     private javax.swing.JButton btnUpdateBill;
